@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+body a{
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVBAR */
+
+.divbackground{
+    background: url(./image\ 1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;   
+   filter: grayscale(10%);
+    
+
+}
+
+nav .divmenu{
+
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+  
+}
+
+nav .divmenu ul {
+list-style-type: none;
+display: flex;
+gap: 40px;
+text-transform: uppercase;
+
+}
+
+.navpara{
+    text-align: center;
+    margin: 140px;
+    padding: 100px;
+    color:white;
+}
+
+.navpara h1{
+    letter-spacing: 5px;
+}
+
+.navpara p{
+    text-transform: uppercase; 
+    color: #ffffff;
+}
+
+  
+
+
+/*  FIN NAVBAR */    
+
+
+/* MAIN IMAGE */
+
+main ul{
+    padding: 35px;
+    text-transform: uppercase;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+main a{
+    color: black;
+} 
+
+
+
+/* main a:hover{
+    color: grey;
+} */
+
+
+main img{
+    width: 500px;
+    display: block;
+    margin: auto;
+    border: solid black 1px;
+
+}
+
+ main .mainimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ main #img3{
+    height: 375px;
+ }
+
+ /* MAIN QUOTE */
+
+ main .mainquote{
+     padding: 30px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ main .mainquote p{
+
+     border-left: 1px solid black;
+     padding-left: 20px;
+ }
+
+ main .mainquote h2{
+
+    font-size: 50px;
+    font-weight:lighter;
+    text-transform: uppercase;
+
+}
+
+
+/* FORMULAIRE DE CONTACT  - PAGE 2 */
+
+form{
+    border: solid 0.5px black;
+    background: rgb(224, 224, 224);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+form h1{
+font-size: 50px;
+font-weight:lighter;  
+letter-spacing: 5px; 
+margin: 45px;
+}
+
+form .tableau{
+    height :  1000px;
+    align-content: center;   
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+}
+
+
+form .tableau input, textarea { 
+   background: rgb(224, 224, 224) ;
+   border: none;
+}
+
+form .tableau  input, textarea{
+    border-bottom: black solid 1px ;
+    margin: 15px;
+    display: inline;
+}
+
+/* TABLEAU STORE HOURS  - PAGE 3 */
+
+.tablehours{
+    border: solid 0.5px black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: rgb(224, 224, 224);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px; 
+}
+
+table caption {
+    border: solid 0.5px black;
+    margin: 40px;
+    font-size: 40px;
+    
+}
+
+table caption tr,td{
+    border: black solid 0.5px;
+    width: 150px;
+    padding: 10px;
+    table-layout: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    height: 200px;
+    background: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footericon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+footer  a{
+    color: black;
+}
