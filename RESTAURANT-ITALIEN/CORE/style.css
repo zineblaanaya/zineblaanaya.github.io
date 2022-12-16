@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAV */
+
+nav {
+    background-color: #c7c0b6;
+    /* height: 4vh; */
+    font-size: calc(9px + 1vw);
+    letter-spacing: 2px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 15px;
+    word-spacing: 20px;
+    border-bottom: 1Px solid rgba(255, 255, 255, 0.386);
+    color: black;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(9px + 1vw);
+    transition: all 1s ease;
+}
+
+nav .a-button {
+    border: 0.5px black solid;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+/* REVOIR LES TRANSITIONS */
+
+nav a:hover {
+    border-bottom: black solid 0.5px;
+    padding: 2px;
+}
+
+
+/* MAIN */
+
+main {
+    background: url(../ASSETS/pasta1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    padding: 20%;
+}
+
+main h1 {
+    letter-spacing: 3px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* main p{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+} */
+
+
+/* CONTAINER 2 */
+
+.secondcontainer {
+    height: 80vh;
+    background-color: #c7c0b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcontainertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.secondcontainer img {
+    width: 35vw;
+    height: 70vh;
+    margin: 40px;
+    border: solid 1px black;
+    border-right: none;
+}
+
+.secondcontainer h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.secondcontainer p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* CONTAINER 3  */
+
+.thrid-container {
+    height: 60vh;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.thrid-container p {
+    font-size: 35px;
+}
+
+.thrid-container iframe {
+    padding: 20px;
+}
+
+
+/* CONTAINER 4  */
+
+.fourth-container {
+    text-align: center;
+}
+
+.fourth-container ol {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+.glossaire {
+    font-size: 8px;
+    padding-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 20vh;
+    background-color: #3a3826;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+footer ul li i {
+    color: #c7c0b6;
+    font-size: 30px;
+}
+
+.linkfooter {
+    word-spacing: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c7c0b6;
+}
+
+
+audio {
+    width: 100vw;
+}
+
+
+/* HTML PAGE MENU  */
+
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: url(../ASSETS/pasta3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header h1 {
+    letter-spacing: 3px;
+    font-size: 60px;
+    color: white;
+    padding: 10%;
+}
+
+
+table,
+th {
+    font-size: 30px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.tabletitle {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #8e8356;
+}
+
+
+.tablemeal {
+    font-size: 5px;
+    color: #3a3826;
+}
+
+.tablemeal th {
+    font-size: 15px;
+    border-right: solid 0.1px black;
+}
+
+
+/* TABLEAU CACHE */
+
+.hidden-table {
+    visibility: hidden;
+}
+
+/* PAGE FORMULAIRE */
+
+.contact {
+    padding: 180px 0px 100px 0px;
+    min-height: 100vh;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form-container form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact-form-container form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.contact-form-container form textarea {
+    min-height: 60px;
+}
+
+
+form button {
+    font-size: 15px;
+    height: 30px;
+    background: #c7c0b6;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+    color: #3a3826;
+}
+
+
+form h2 {
+    margin-bottom: 45px;
+}
+
+
+/* PAGE CONNEXION */
+
+.main-form {
+    padding: 180px 0px 100px 0px;
+    min-height: 100vh;
+}
+
+
+.div-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.div-form form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: 40px;
+    padding: 30px;
+}
+
+
+.div-form form label input {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+
+/* GALERIE IMAGE */
+    
+.container-img h2 {
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.galerie-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.galerie-img img{
+    object-fit: cover;
+    object-position: center;
+    width: 30vw;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width : 850px) {
+
+    nav {
+        font-size: calc(7px + 1vw);
+        letter-spacing: 1px;
+        padding: 10px;
+
+    }
+
+    nav a {
+        font-size: calc(5px + 1vw);
+
+    }
+
+    nav .a-button {
+        padding: 4px;
+    }
+
+
+    main {
+        height: 50vh;
+    }
+
+
+    .secondcontainer {
+        height: 20vh;
+    }
+
+    .secondcontainertext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .secondcontainer img {
+        visibility: hidden;
+    }
+
+    .secondcontainer h2 {
+        font-size: 20px;
+    }
+
+    .secondcontainer p {
+        visibility: hidden;
+    }
+
+
+    /* CONTAINER 3  */
+
+    .thrid-container {
+        height: 80vh;
+    }
+
+    .thrid-container p {
+        font-size: 35px;
+    }
+
+    .thrid-container iframe {
+        padding: 10px;
+        width: 90vw;
+    }
+
+
+    /* CONTAINER GALERIE IMAGE */
+
+
+    .galerie-img {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-auto-flow: row;
+    }
+
+    .galerie-img img{
+        width: 100%;   
+    }
+
+
+}
